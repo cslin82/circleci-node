@@ -1,0 +1,20 @@
+{
+  "name": "circleci-node",
+  "version": "1.0.0",
+  "description": "Learning circleci on a node app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cslin82/circleci-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cslin82/circleci-node/issues"
+  },
+  "homepage": "https://github.com/cslin82/circleci-node#readme"
+}
