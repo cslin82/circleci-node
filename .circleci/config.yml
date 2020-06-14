@@ -6,8 +6,8 @@ workflows:
   matrix-tests:
     jobs:
       - node/test:
-          version: 14.x
+          version: current
       - node/test:
-          version: 12.x
+          version: erbium
       - node/test:
-          version: 10.x
+          version: dubnium
