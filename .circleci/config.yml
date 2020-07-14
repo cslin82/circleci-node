@@ -2,12 +2,18 @@ version: 2.1
 orbs:
   node: circleci/node@3.0.1
 
+jobs:
+  test:
+    executor:
+      name: node/default
+      tag: 'lts'
+    steps:
+      - checkout
+      - node/install-packages
+      - run:
+          command: npm run test
+
 workflows:
-  matrix-tests:
+  test:
     jobs:
-      - node/test:
-          version: current
-      - node/test:
-          version: erbium
-      - node/test:
-          version: dubnium
+      - test
